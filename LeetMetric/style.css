@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: #272526;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: orange;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 50%;
+}
+
+.h1 {
+  font-size: 2rem;
+}
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: start;
+}
+
+.user-input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#user-input {
+  padding: 0.4rem;
+  border-radius: 5px;
+  border: none;
+  width: 80%;
+}
+
+#search-btn {
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #272526;
+  color: white;
+  cursor: pointer;
+  width: 18%;
+}
+
+.stats-container {
+  /* display: none; Initially hidden */
+  flex-direction: column;
+  gap: 10px;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #413e3f;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  background: conic-gradient(#0ff113 var(--progress-degree, 10%), #257917 0%);
+}
+
+.circle span {
+  position: relative;
+  z-index: 2;
+}
+
+.progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* .stats-cards {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  max-width: 100%;
+} */
+
+h4 {
+  font-size: 1rem;
+}
+
+#stats-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* Adjust gap between cards */
+  padding: 20px; /* Optional: Add padding around the grid */
+}
+
+.card {
+  background-color: #1c4a10; /* Background color for the card */
+  padding: 20px; /* Space inside the card */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Card shadow for effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Optional: Center text inside card */
+}
